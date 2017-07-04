@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "workinguinee-mobile-theme.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in workinguinee-mobile-theme.scss */
+.workinguinee-mobile-theme {
+  @include addons;
+  @include workinguinee-mobile-theme;
+}

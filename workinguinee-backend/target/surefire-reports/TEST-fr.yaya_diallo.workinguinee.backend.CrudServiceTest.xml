@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.yaya_diallo.workinguinee.backend.CrudServiceTest" time="0.054" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Jdev12\Java8.92\jre\bin"/>
+    <property name="java.vm.version" value="25.92-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\PG8PF\Downloads\workinguinee"/>
+    <property name="java.runtime.version" value="1.8.0_92-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Jdev12\Java8.92\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\PG8PF\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Users\PG8PF\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4934890813626818712.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Jdev12\Java8.92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Jdev12/Java8.92/bin/../jre/bin/server;C:/Jdev12/Java8.92/bin/../jre/bin;C:/Jdev12/Java8.92/bin/../jre/lib/amd64;C:\Users\PG8PF\AppData\Local\Temp\e4j6D2A.tmp_dir1499161478\user;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Norskale\Norskale Agent Host\;C:\Jdev12\Java8.92\bin;C:\Jdev12\Middleware12c\oracle_common\modules\org.apache.maven_3.2.5\bin;C:\PRIVE\ELK\jruby-9.1.8.0\bin;c:\jdev12\java8.92\jre\bin;C:\PRIVE\RapidClipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\PG8PF"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="pg8pf"/>
+    <property name="java.class.path" value="C:\PRIVE\Doc_Yaya\outils\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Jdev12\Java8.92\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_92"/>
+    <property name="java.ext.dirs" value="C:\Jdev12\Java8.92\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Jdev12\Java8.92\jre\lib\resources.jar;C:\Jdev12\Java8.92\jre\lib\rt.jar;C:\Jdev12\Java8.92\jre\lib\sunrsasign.jar;C:\Jdev12\Java8.92\jre\lib\jsse.jar;C:\Jdev12\Java8.92\jre\lib\jce.jar;C:\Jdev12\Java8.92\jre\lib\charsets.jar;C:\Jdev12\Java8.92\jre\lib\jfr.jar;C:\Jdev12\Java8.92\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\PRIVE\Doc_Yaya\outils\apache-maven-3.2.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testRemoveBeanFromService" classname="fr.yaya_diallo.workinguinee.backend.CrudServiceTest" time="0.002"/>
+  <testcase name="testAddEntityTwice" classname="fr.yaya_diallo.workinguinee.backend.CrudServiceTest" time="0.001"/>
+  <testcase name="testSaveTenBeansToService" classname="fr.yaya_diallo.workinguinee.backend.CrudServiceTest" time="0"/>
+</testsuite>

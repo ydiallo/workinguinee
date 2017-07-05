@@ -14,12 +14,20 @@ public class WorkinguineeUIProvider extends UIProvider {
 
 	@Override
 	public Class<? extends UI> getUIClass(UIClassSelectionEvent event) {
-		 String mobile = event.getRequest().getParameter("mobile");
-		 
-		 if(mobile == null){
-			 return WorkinguineeUI.class;
-		 }else {
-			 return WorkinguineeUIMobile.class;
-		 }
+		
+		if(event!=null && event.getRequest()!=null && event.getRequest().getHeader("user-agent")!=null){
+			String userAgent = event.getRequest().getHeader("user-agent").toLowerCase();
+			
+			// on teste que l'utilisateur est sous WP ou accède via un navigateur compatible webkit
+			if(userAgent.contains("Webkit") || userAgent.contains("webkit") || userAgent.contains("windows phone 8")
+					|| userAgent.contains("windows phone 9")) {
+				//On va vers la version mobile
+				return WorkinguineeUIMobile.class;
+			} else{
+				//On affiche la page proposant une redirection vers la version Desktop
+				return WorkinguineeUI.class;
+			}
+		}
+		return WorkinguineeUI.class;
 	}
 }

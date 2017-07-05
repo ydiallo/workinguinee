@@ -6,19 +6,19 @@
 
 	<servlet>
 		<servlet-name>Workinguinee</servlet-name>
-		<servlet-class>fr.yaya_diallo.workinguinee.WorkinguineeUIServlet</servlet-class>
+		<servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
+		<init-param>
+			<param-name>UIProvider</param-name>
+			<param-value>fr.yaya_diallo.workinguinee.WorkinguineeUIProvider</param-value>
+		</init-param>
 		<init-param>
 			<param-name>widgetset</param-name>
 			<param-value>com.vaadin.DefaultWidgetSet</param-value>
 		</init-param>
-		<init-param>
-			<param-name>UIProvider</param-name>
-			<param-value>fr.workinguinee.uiparent.WorkinguineeUIProvider</param-value>
-		</init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Workinguinee</servlet-name>
-		<url-pattern>/VAADIN/*</url-pattern>
+		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 
 

@@ -1,18 +1,10 @@
 package fr.yaya_diallo.workinguinee.mobile;
 
-import javax.servlet.annotation.WebServlet;
-
 import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.data.provider.CallbackDataProvider;
 import com.vaadin.data.provider.DataProvider;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Grid;
-import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
 
 import fr.yaya_diallo.workinguinee.Person;
 import fr.yaya_diallo.workinguinee.backend.CrudService;
@@ -32,7 +24,7 @@ public class WorkinguineeUIMobile extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest) {
 
-        final VerticalLayout layout = new VerticalLayout();
+        /*final VerticalLayout layout = new VerticalLayout();
         final TextField name = new TextField();
         name.setCaption("Type your name here (MOBILE):");
 
@@ -52,16 +44,8 @@ public class WorkinguineeUIMobile extends UI {
         layout.addComponents(name, button, grid);
         layout.setSizeFull();
         layout.setExpandRatio(grid, 1.0f);
+        */
 
-        setContent(layout);
+        setContent(new MainTabsheet());
     }
-    
- /* @WebServlet(urlPatterns = "/mobile/*", name = "WorkinguineeUIMobileServlet", asyncSupported = true)
-  @VaadinServletConfiguration(ui = WorkinguineeUIMobile.class, productionMode = false)
-  public static class WorkinguineeUIMobileServlet extends VaadinServlet {
-
-	private static final long serialVersionUID = -1420170929831271530L;
-	
-	  
-  }*/
 }
